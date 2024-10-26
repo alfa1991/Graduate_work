@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.13 Stable Django admin panel, menu adding items, with main menu, link">
-      <change beforePath="$PROJECT_DIR$/.idea/project_root.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_root.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/init_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +305,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729969897324</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="1.13 Stable Django admin panel, menu adding items, with main menu, link">
+      <option name="closed" value="true" />
+      <created>1729970540029</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729970540029</updated>
+    </task>
+    <task id="LOCAL-00027" summary="1.13 Stable Django admin panel, menu adding items, with main menu, link">
+      <option name="closed" value="true" />
+      <created>1729970810458</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729970810458</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,8 +1,9 @@
-# init_db.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\flask_app\init_db.py
 
-from app import app
 from database import init_db
 from models import User, db
+
+from app import app  # Переместите этот импорт после определения функций, чтобы избежать циклического импорта
 
 with app.app_context():
     init_db()  # Инициализация базы данных

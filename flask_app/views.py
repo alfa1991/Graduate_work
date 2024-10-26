@@ -1,6 +1,11 @@
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\flask_app\views.py
+
 from flask import render_template, request, redirect, url_for
-from app import app
 from models import User, db
+
+def get_app():
+    from app import app  # Импортируем app внутри функции
+    return app
 
 @app.route('/register_user', methods=['GET', 'POST'])  # Изменено имя маршрута
 def register_user():
