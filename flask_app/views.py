@@ -2,6 +2,7 @@
 
 from flask import render_template, request, redirect, url_for
 from models import User, db
+from app import app
 
 def get_app():
     from app import app  # Импортируем app внутри функции
