@@ -1,7 +1,6 @@
 # C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\flask_app\app.py
 
 
-# app.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
@@ -16,16 +15,19 @@ from models import User  # Убедитесь, что у вас есть это�
 with app.app_context():
     db.create_all()
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 import logging
 
-@app.before_first_request
+@app.before_request
 def log_routes():
     for rule in app.url_map.iter_rules():
         print(f"Route: {rule.endpoint} - Methods: {list(rule.methods)}")
 
+
+# Импортируйте маршруты из views.py
+from views import *  # Импортируйте все маршруты из views.py
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
 
