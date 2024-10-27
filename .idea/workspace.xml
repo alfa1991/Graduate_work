@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.14 Flask_app, DB">
-      <change beforePath="$PROJECT_DIR$/flask_app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/database.py" afterDir="false" />
+    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.14 Flask_app, working DB">
+      <change afterPath="$PROJECT_DIR$/flask_app/instance/your_database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/edit_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -98,7 +109,7 @@
       <workItem from="1729708224742" duration="10171000" />
       <workItem from="1729718556036" duration="13078000" />
       <workItem from="1729878521301" duration="2836000" />
-      <workItem from="1730047160483" duration="3280000" />
+      <workItem from="1730047160483" duration="5613000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <option name="closed" value="true" />
@@ -332,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730053843325</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="1.14 Flask_app, working DB">
+      <option name="closed" value="true" />
+      <created>1730053982482</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730053982482</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +400,8 @@
     <MESSAGE value="1.13 Stable Django admin panel, menu adding items, with main menu, link" />
     <MESSAGE value="1.14 Flask_app" />
     <MESSAGE value="1.14 Flask_app, DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.14 Flask_app, DB" />
+    <MESSAGE value="1.14 Flask_app, working DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.14 Flask_app, working DB" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Graduate_work$app.coverage" NAME="app Coverage Results" MODIFIED="1729451403960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_app" />

@@ -2,26 +2,30 @@
 
 
 # app.py
-from flask import Flask, render_template
-from config import Config
-from database import db  # Импортируйте db из database.py
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config.from_object(Config)  # Загрузка конфигурации
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'  # Укажите правильный URI для базы данных
+db = SQLAlchemy(app)  # Инициализация базы данных с приложением
 
-db.init_app(app)  # Привязываем SQLAlchemy к приложению Flask только здесь
+# Импортируйте модели здесь
+from models import User  # Убедитесь, что у вас есть этот импорт
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-# Импортируем маршруты после определения приложения
-from views import *
+# Создание таблиц при первом запуске приложения
+with app.app_context():
+    db.create_all()
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()  # Создание таблиц при первом запуске приложения
     app.run(debug=True)
+
+import logging
+
+@app.before_first_request
+def log_routes():
+    for rule in app.url_map.iter_rules():
+        print(f"Route: {rule.endpoint} - Methods: {list(rule.methods)}")
+
 
 
 
