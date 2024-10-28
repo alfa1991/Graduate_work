@@ -1,4 +1,4 @@
-# object_detection/urls.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\urls.py
 
 from django.urls import path, include
 from .views import item_list_api, home, index  # Импортируем home

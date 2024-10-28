@@ -1,4 +1,4 @@
-# admin
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\admin.py
 
 from django.contrib import admin
 from .models import Item  # Импортируем модель Item для работы с ней в админке

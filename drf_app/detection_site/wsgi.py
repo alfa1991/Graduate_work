@@ -1,4 +1,4 @@
-#wsgi.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\detection_site\wsgi.py
 
 
 import os

@@ -1,5 +1,4 @@
-# tests.py
-# object_detection/tests.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\tests.py
 
 from rest_framework.test import APITestCase
 from rest_framework import status

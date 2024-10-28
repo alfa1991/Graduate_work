@@ -1,4 +1,4 @@
-#serializers.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\serializers.py
 
 
 

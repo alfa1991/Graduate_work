@@ -1,3 +1,5 @@
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\detection_site\settings.py
+
 import os
 from pathlib import Path
 from decouple import config

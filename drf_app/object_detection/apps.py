@@ -1,4 +1,4 @@
-# object_detection/apps.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\apps.py
 
 from django.apps import AppConfig
 

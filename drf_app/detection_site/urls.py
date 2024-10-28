@@ -1,4 +1,4 @@
-#detection_site/urls.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\detection_site\urls.py
 
 from django.contrib import admin
 from django.urls import path, include

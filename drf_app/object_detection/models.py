@@ -1,4 +1,4 @@
-#object_detection/models.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\models.py
 
 
 

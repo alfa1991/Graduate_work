@@ -1,4 +1,4 @@
-# object_detection/signals.py
+# C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection\signals.py
 
 from django.db.models.signals import post_save
 from django.dispatch import receiver

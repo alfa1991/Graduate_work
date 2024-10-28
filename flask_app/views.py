@@ -11,7 +11,7 @@ def get_app():
 
 @app.route('/')
 def home():
-    return render_template('home.html')  # Убедитесь, что файл home.html существует
+    return render_template('index.html')  # Убедитесь, что файл home.html существует
 
 
 @app.route('/users')
@@ -19,16 +19,19 @@ def users():
     users = User.query.all()
     return render_template('users.html', users=users)
 
-@app.route('/register', methods=['GET', 'POST'])  # Изменено на '/register'
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        username = request.form['username']
-        email = request.form['email']
-        new_user = User(username=username, email=email)
-        db.session.add(new_user)
-        db.session.commit()
-        return redirect(url_for('home'))  # Перенаправление на главную страницу
-    return render_template('register.html')  # Отображаем страницу регистрации
+        username = request.form.get('username')
+        email = request.form.get('email')
+        password = request.form.get('password')  # Используйте get() вместо прямого доступа
+        if username and email and password:
+            # Здесь можно добавить логику для регистрации пользователя
+            return redirect(url_for('home'))  # Перенаправление после успешной регистрации
+        else:
+            # Обработка ситуации, когда одно из полей пустое
+            return "Все поля обязательны для заполнения", 400
+    return render_template('register.html')
 
 
 @app.route('/edit_user/<int:user_id>', methods=['GET', 'POST'])
