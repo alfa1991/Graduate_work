@@ -18,11 +18,6 @@ def home(request):
 def index(request):
     return render(request, 'object_detection/home.html')  # Здесь указываем, что отображается home.html
 
-@api_view(['GET'])
-def item_list_api(request):
-    items = Item.objects.all()  # Получаем все предметы
-    serializer = ItemSerializer(items, many=True)  # Сериализация предметов
-    return Response(serializer.data)  # Возвращаем данные в формате JSON
 
 class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()  # Запрос всех предметов
@@ -35,7 +30,7 @@ router.register(r'items', ItemViewSet)  # Исправлено на ItemViewSet
 urlpatterns = [
     path('', index, name='index'),  # Главная страница вашего приложения
     path('home/', home, name='home'),  # Страница "Home"
-    path('items/api/', item_list_api, name='item_list_api'),  # API для отображения списка предметов
+    #path('items/api/', item_list_api, name='item_list_api'),  # API для отображения списка предметов
     path('api/', include(router.urls)),  # URL для API
 ]
 
