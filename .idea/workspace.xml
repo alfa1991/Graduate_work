@@ -9,10 +9,15 @@
   <component name="ChangeListManager">
     <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.17 fast_api CRUD, comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastapi_app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastapi_app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastapi_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastapi_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastapi_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastapi_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/detection_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/detection_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/detection_site/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +111,7 @@
       <workItem from="1729718556036" duration="13078000" />
       <workItem from="1729878521301" duration="2836000" />
       <workItem from="1730047160483" duration="10451000" />
-      <workItem from="1730132024551" duration="18850000" />
+      <workItem from="1730132024551" duration="19499000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <option name="closed" value="true" />
@@ -404,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730221070439</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="1.17 fast_api CRUD, comments">
+      <option name="closed" value="true" />
+      <created>1730221114283</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1730221114283</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
