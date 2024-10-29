@@ -28,11 +28,12 @@ http://127.0.0.1:8080/api/items/
 
 Fastapi
 uvicorn main:app --reload
-http://127.0.0.1:8000
-http://127.0.0.1:8000/items/
-http://127.0.0.1:8000/items/1
-http://127.0.0.1:8000/docs
-http://127.0.0.1:8000/redoc
+uvicorn main:app --reload --port 8080
+http://127.0.0.1:8080
+http://127.0.0.1:8080/items/
+http://127.0.0.1:8080/items/1
+http://127.0.0.1:8080/docs
+http://127.0.0.1:8080/redoc
 GET /items/
 GET /items/{item_id} 
 
