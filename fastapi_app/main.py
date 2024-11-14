@@ -12,12 +12,6 @@ app = FastAPI()  # Создаем экземпляр приложения FastAP
 
 app.include_router(item_router)  # Подключаем маршрутизатор item_router к приложению
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 @app.get("/")  # Обрабатываем GET-запрос на корневой маршрут
 async def get_root():  # Асинхронная функция для обработки GET-запроса

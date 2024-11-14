@@ -9,18 +9,15 @@ from models import Item as ItemModel   # Импортируем модель Ite
 
 # Схема Pydantic для запросов и ответов
 class Item(BaseModel):
-    id: int
     name: str
     description: str
 
     class Config:
-        orm_mode = True  # Поддержка совместимости с ORM-моделями
+        from_attributes = True  # Используем 'from_attributes'
 
 # Создаем маршрутизатор для управления запросами, связанными с товарами
 item_router = APIRouter()
 
-# Список для хранения товаров в памяти (в качестве примера данных)
-items_db = []
 
 # GET: Получение всех товаров
 @item_router.get("/items/", response_model=List[Item])
