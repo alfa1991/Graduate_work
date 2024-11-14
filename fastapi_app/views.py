@@ -1,19 +1,20 @@
 # C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\fastapi_app\views.py
 
-from fastapi import APIRouter, HTTPException, Depends
-from sqlalchemy.orm import Session
-from database import get_db
-from pydantic import BaseModel
-from typing import List
-from models import Item as ItemModel   # Импортируем модель Item, представляющую структуру данных для товаров
+from fastapi import APIRouter, HTTPException, Depends  # Импортируем нужные классы и функции из FastAPI
+from sqlalchemy.orm import Session  # Импортируем класс Session для работы с сессиями SQLAlchemy
+from database import get_db  # Импортируем функцию get_db для получения сессии базы данных
+from pydantic import BaseModel  # Импортируем базовый класс для схемы данных
+from typing import List  # Импортируем тип List для указания списков в аннотациях
+from models import Item as ItemModel  # Импортируем модель Item из модуля models и задаем ей псевдоним ItemModel
 
-# Схема Pydantic для запросов и ответов
+# Создаем схему Pydantic для запросов и ответов, представляющую структуру данных для объектов типа "Item"
 class Item(BaseModel):
-    name: str
-    description: str
+    name: str  # Поле "name", тип данных — строка, представляет название объекта
+    description: str  # Поле "description", тип данных — строка, представляет описание объекта
 
+    # Вложенный класс Config для настройки поведения модели Pydantic
     class Config:
-        from_attributes = True  # Используем 'from_attributes'
+        from_attributes = True  # Устанавливаем from_attributes=True, чтобы разрешить преобразование из объектов SQLAlchemy в объекты Pydantic
 
 # Создаем маршрутизатор для управления запросами, связанными с товарами
 item_router = APIRouter()
